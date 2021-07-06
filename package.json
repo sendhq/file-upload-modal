@@ -1,20 +1,35 @@
 {
   "name": "file-upload-modal",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
+  "version": "0.1.5",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "engines": {
+    "node": ">=4.1.0"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "keywords": [
+    "react",
+    "react-file-upload",
+    "upload-modal",
+    "uploader"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imoris11/file-upload-modal.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Richard Igbiriki",
+    "email": "imorobebh@gmail.com"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rollup -c",
     "test": "react-scripts test",
+    "prettify-check": "prettier --config .prettierrc 'src/**/**.js' --check",
+    "prettify": "prettier --config .prettierrc 'src/**/**.js' --write",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -34,5 +49,31 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "peerDependencies": {
+    "react": "=>17.0.2",
+    "react-dom": ">=17.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-image": "^2.0.6",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "csvtojson": "^2.0.10",
+    "postcss": "^8.3.5",
+    "prettier": "^2.3.2",
+    "react": ">=17.0.2",
+    "react-dom": ">=17.0.2",
+    "react-file-reader-input": "^2.0.0",
+    "react-modal": "^3.14.3",
+    "react-scripts": "4.0.3",
+    "rollup": "^2.52.7",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-visualizer": "^5.5.1"
   }
 }
