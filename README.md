@@ -2,6 +2,8 @@
 
 Select a csv file, preview, edit and/or delete rows before submitting. 
 
+![file-upload-modal](https://github.com/sendhq/file-upload-modal/blob/master/file-modal-upload.gif)
+
 ### Installation
 
 `yarn add file-upload-modal react-file-reader-input react-modal csvtojson`
