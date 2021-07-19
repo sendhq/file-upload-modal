@@ -1,21 +1,3 @@
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-  }
-  
-p {
-    font-size: 0.9em;
-  }
-  
   .Overlay {
     position: fixed;
     top: 0;
@@ -103,7 +85,7 @@ p {
     margin: 0 auto;
     overflow: auto;
   }
-  table {
+  table.modal-table {
     border: 1px solid #ccc;
     width: 100%;
     border-radius: 5px;
@@ -111,20 +93,20 @@ p {
     overflow: hidden;
   }
   
-  table th {
+  .modal-table th {
     padding: 1rem 1.5rem;
     text-align: center;
     letter-spacing: 0.1px;
     background: white;
   }
-  th,td{
+  .modal-table th, .modal-table td{
     text-align: center;
   }
-  td {
+  .modal-table td {
     padding: 1.5rem;
     letter-spacing: 0.71px;
   }
-  tr:nth-of-type(2n-1){
+  .modal-table tr:nth-of-type(2n-1){
     background: rgba(196, 196, 196, 0.1);
   }
   .action-edit, .action-delete{
@@ -175,7 +157,7 @@ p {
     opacity: 0.8;
   }
   
-  input {
+  .modal-input {
     width: 100%;
     min-width: 100px;
     height: 25px;

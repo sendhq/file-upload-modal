@@ -1,6 +1,6 @@
 {
   "name": "file-upload-modal",
-  "version": "0.1.7",
+  "version": "1.0.0",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "engines": {

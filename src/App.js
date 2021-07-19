@@ -1,4 +1,4 @@
-import UploadModal from 'file-upload-modal'
+import UploadModal from '../src/UploadModal'
 
 function App() {
   const handleSave = (data) => {

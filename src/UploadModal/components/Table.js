@@ -54,7 +54,7 @@ export const Table = ({
     <div className="modal-wrapper">
       <div title="table-wrapper" className="table-wrapper">
         {tableHeaders.length > 0 && (
-          <table title="table">
+          <table className="modal-table" title="table">
             <thead>
               <tr>
                 {tableHeaders.map((header, idx) => (

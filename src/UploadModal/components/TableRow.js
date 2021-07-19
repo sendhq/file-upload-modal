@@ -20,6 +20,7 @@ export const TableRow = ({
           <td key={idx}>
             {row.editing ? (
               <input
+                className="modal-input"
                 title="row-input"
                 onChange={handleChange}
                 key={idx}
